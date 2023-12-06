@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SENGProject</string>
+    <string name="create">Create</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="existing_user">Existing User?</string>
+    <string name="login_here">Login Here</string>
+    <string name="Login">Login</string>
+    <string name="NoAccount">No Account?</string>
+    <string name="CreateHere">Create Here</string>
+    <string name="title_activity_hub">HubActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="record_a_drive">Record a Drive</string>
+    <string name="start_drive">Start Drive</string>
+    <string name="user_settings">User Settings</string>
+</resources>

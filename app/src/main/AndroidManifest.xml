@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Permissions for sensors -->
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SENGProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HubActivity"
+            android:exported="false"
+            android:label="@string/title_activity_hub" /> <!-- This should be true -->
+        <!-- Other activities -->
+        <activity
+            android:name=".ManualDataCollectionActivity"
+            android:exported="true" /> <!-- Set to true if this can be started from other activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Set to true as this is an entry point after login -->
+        <!-- RegisterActivity is the launcher activity and entry point to the app -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"> <!-- This should already be true because it's the launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

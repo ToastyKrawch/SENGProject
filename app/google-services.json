@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035340596575",
+    "project_id": "sengproject-76312",
+    "storage_bucket": "sengproject-76312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035340596575:android:422a002b4eb6e7ad7622ea",
+        "android_client_info": {
+          "package_name": "com.example.sengproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGZVNQW2CfXKTSyJ_puFbw97ad5PRScVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

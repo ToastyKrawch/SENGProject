@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="133dp"
+        android:text="@string/Login"
+        app:layout_constraintBottom_toTopOf="@+id/ExistingTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Login" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="49dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/CreateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/Login"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Login" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="107dp"
+        android:text="@string/CreateHere"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Create Here" />
+
+    <TextView
+        android:id="@+id/ExistingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/NoAccount"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/createAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="No Account?" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
